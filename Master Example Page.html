@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Master Example Page - HTML, CSS</title>
+        <style>
+            body {
+                background-color: rgb(225,225,225);
+                color: rgb(50, 8, 80);
+                font-family: monospace;
+            }
+
+            h1 {
+                text-decoration: ;
+                font-family:'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                border: dashed;
+                border-width: 3px;
+                text-align: center;
+                margin: 40px 60px 30px 60px;
+                box-shadow: 0 10px 10px gray;
+            }
+
+            #lorem-ipsum {
+                width: 300px;
+            }
+
+            #div-one {
+                border: solid;
+                border-width: 1px;
+                background-color: rgb(205,205,205);
+                width: 50%;
+                text-align: center;
+                margin-left: 25%;
+                display: inline-block;
+                background: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/1914_Sydney_Half_Sovereign_-_St._George.jpg/170px-1914_Sydney_Half_Sovereign_-_St._George.jpg);
+            }
+
+            .inline-div {
+                display: inline-block;
+                width: 20%;
+                border: solid;
+                border-width: 1px;
+                text-align: center;
+                float: left;
+            }
+
+            .shadow-one {
+                box-shadow: 0 30px 30px gray;
+                border: solid;
+                border-width: 1px;
+                width: 20%;
+                margin-top: 135px;
+                text-align: center;
+                border-radius: 5px;
+            }
+
+            #top-div {
+                width: 100%;
+                height: 120px;
+                background-color: yellowgreen;
+                text-align: center;
+                padding-top: 8px;
+                margin-top: 40px;
+            }
+            
+            #side-div {
+                width: 20%;
+                background-color: yellowgreen;
+                height: 300px;
+                display: inline-block;
+            }
+
+            #body-div {
+                background-color: white;
+                width: 80%;
+                display: inline-block;
+                float: right;
+                height: 300px;
+            }
+
+            #radius-one, #radius-two {
+                border-radius: 50%;
+                background: linear-gradient(45deg, black, orange);
+                width: 50px;
+                height: 50px;
+                float: left;
+                margin-top: 400px;
+
+            }
+
+            #radius-one {
+                transform: scale(15);
+                color: black;
+                text-align: right;
+                font-size: 5px;
+            }
+
+            #radius-two {
+                margin-left: 400px;
+                color: black;
+            }
+
+            #hovertest {
+                margin-top: 900px;
+            }
+            
+            #hovertest-one {
+                background: linear-gradient(45deg, black, darkred);
+                padding-top: 146px;
+                width: 300px;
+                height: 200px;
+                color: white;
+                text-align: center;
+            }
+
+            #hovertest-one:hover {
+                transform: rotateX(180deg);
+            }
+
+            #skew-y, #skew-x, #rotate, #enlarge-scale {
+                height: 130px;
+                width: 130px;
+                background-color: yellow;
+                border: solid;
+                border-width: 2px;
+                display: inline-block;
+                text-align: center;
+                padding: 63px;
+            }
+
+            #skew-y:hover {
+                background-color: red;
+                transform: skewY(30deg);
+            }
+
+            #skew-x:hover {
+                background-color: red;
+                transform: skewX(30deg);
+            }
+
+            #rotate:hover {
+                background-color: red;
+                transform: rotate(50deg);
+            }
+
+            #enlarge-scale:hover {
+                background-color: red;
+                transform: scale(2.5);
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <!-- HOW TO DO A COMMENT! -->
+        <div>
+            <div id="page-shortcut">
+                <ul>
+                    <li><a href="#page-shortcut">Shortcuts to page sections</a></li>
+                    <li><a href="#head-para">Header and Paragraph</a></li>
+                    <li><a href="#lists">Lists</a></li>
+                    <li><a href="#link-pic">Links and Pictures</a></li>
+                    <li><a href="#button">Buttons</a></li>
+                    <li><a href="#form">Forms and Inputs</a></li>
+                    <li><a href="#div-one">div position stuff</a></li>
+                    <li><a href="#inline-divs">Inline div positioning</a></li>
+                    <li><a href="#shadows">Shadows and border radius</a></li>
+                    <li><a href="#fixed-divs">Fixed Divs (Needs more work)</a></li>
+                    <li><a href="#radius-gradiant">Radius Fun and Gradiant fun</a></li>
+                    <li><a href="#hovertest">Fun with hovering over things using pseudo class (:hover)</a></li>
+                    <li><a href="#transform-it">Look at the fun you can have transforming stuff</a></li>
+                </ul>
+            </div>
+
+            <div id="head-para">    
+                <h1>(Header 1) All Coding Principles I can pack onto one page</h1> <!-- inline element -->
+                <a href="#page-shortcut">Back to top</a>
+                <p>Paragraph element</p>
+            </div>
+
+            <div id="lists">
+                <h1>Lists: ordered and unordered</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <ul>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ul>
+                <ol>
+                    <li>item 1</li>
+                    <li>item 2</li>
+                    <li>item 3</li>
+                </ol>
+            </div>
+
+            <div id="link-pic">
+                <h1>Link and Pictures</h1>
+                <a href="#page-shortcut">Back to top</a><br>
+                <a href="http://www.freecodecamp.org" target="_blank">Free Code Camp</a>
+                <br> <!--creates a line break-->
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Inadvertent_greeking_in_The_Straits_Times_%2826_April_2014%29%2C_Singapore_-_20140428.jpg/220px-Inadvertent_greeking_in_The_Straits_Times_%2826_April_2014%29%2C_Singapore_-_20140428.jpg" id="lorem-ipsum" alt="lorem ipsum">
+            </div>
+
+            <div id="button">
+                <h1>Buttons!</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <button>Press this Button</button>
+            </div>
+
+            <div id="form">
+                <h1>Forms and Inputs</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <form>
+                    <label for="checkbox-one" name="checkbox"> <!--all inputs must have a label to tell selections when submitted-->
+                        <input type="checkbox" id="checkbox-one">checkbox
+                    </label>
+                    <br>
+                    <label for="textbox-one" name="textbox">
+                        <input type="text" id="textbox-one" placeholder="textbox!">
+                    </label>
+                    <label for="submit" name="submit">
+                        <input type="submit" id="submit-one">
+                    </label>
+                </form>
+            </div>
+            <br>
+            <div id="div-one">
+                <h1>DIV boxes, borders, backgrounds, position</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <p>This is a div box with border, background and centered.</p>
+            </div>
+
+            <div id="inline-divs">
+                <h1>Inline Divs</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <div class="inline-div" style="margin-left: 20%;">
+                    <p>DIV ONE</p>
+                </div>
+                <div class="inline-div">
+                    <p>DIV TWO</p>
+                </div>
+                <div class="inline-div">
+                    <p>DIV THREE</p>
+                </div>
+            </div>
+            
+            <div id="shadows" class="shadow-one">
+                <h1>Shadow Boxes and border radius</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <p>Shadow Boxes and border radius</p>
+            </div>
+
+            <div id="fixed-divs"></div>
+                <div id="top-div">
+                    <h1>Header for fixed divs</h1>
+                    <a href="#page-shortcut">Back to top</a>
+                    <p>DIV ONE</p>
+                </div>
+                <div id="side-div">
+                    <p>DIV TWO</p>
+                </div>
+                <div id="body-div">
+                    <p>DIV THREE</p>
+                </div>
+
+            <div id="radius-gradiant">
+                <h1>Radius and Gradiant</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <div id="radius-one">
+                    <p>BIG BALL</p>
+                </div>
+                <div id="radius-two">
+                    <p>little ball</p>
+                </div>
+            </div>
+
+            <div id="hovertest">
+                <h1>Hover Test</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <div id="hovertest-one">
+                    <p>Hover over me, I change.</p>
+                </div>
+            </div>
+
+            <div id="transform-it">
+                <h1>Transform It</h1>
+                <a href="#page-shortcut">Back to top</a>
+                <br>
+                <div id="skew-x">
+                    <p>skew-x</p>
+                </div>
+                <div id="enlarge-scale">
+                    <p>enlarge</p>
+                </div>
+                <div id="skew-y">
+                    <p>skew-y</p>
+                </div>
+                <div id="rotate">
+                    <p>rotate</p>                    
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
