@@ -11,7 +11,7 @@
             }
 
             header {
-                text-align: center;
+		text-align: center;
             }
 
             #title {
@@ -24,14 +24,17 @@
                 margin-bottom: 35px;
                 font-family: 'courier new';
                 width: 60%;
-                text-align: left;
                 font-size: 18px;
             }
 
             #survey-form {
                 padding: 50px 0px 40px 0px;
+            }
+
+            .center-text {
                 text-align: center;
-               
+		font-weight: bold;
+		margin-bottom: 35px;
             }
 
             #main-div {
@@ -45,12 +48,21 @@
                 margin-top: 30px;
                 width: 30%;
                 text-align: center;
+		margin-left: 35%;
             }
             
             #comment {
-                font-size: 20px;
+                font-size: 18px;
+		box-shadow: 0 3px 3px gray;
             }
-            
+
+	    .checkbox-input {
+		padding-left: 200px;
+		margin-right: -250px;
+
+	    }
+
+
         </style>
     </head>
 
@@ -64,22 +76,22 @@
         <div id="main-div">
             <form action="#" id="survey-form">
                 
-                <div id="name-div">
+                <div id="name-div" class="center-text">
                 <label for="name" id="name-label">First Name</label><br>
                     <input type="text" name="name" id="name" placeholder="Enter first name here" required><br>
                 </div>
                 
-                <div id="email-div">
+                <div id="email-div" class="center-text">
                     <label for="email" id="email-label">Email Address</label><br>
                         <input type="email" name="email" id="email" placeholder="Enter email address here" required><br>
                 </div>
                 
-                <div id="number-div">
+                <div id="number-div" class="center-text">
                     <label for="number" id="number-label">Phone Number</label><br>
                         <input type="tel" name="number" id="number" placeholder="Enter Phone Number here" min="10" max="10">
                 </div>
                 
-                <div id="car-type">
+                <div id="car-type" class="center-text">
                     <label for="cartype">Select your desired vehicle type:
                         <select type="dropdown" name="cartype" id="cartype">
                             <option value="Sedan">Sedan</option>
@@ -90,13 +102,13 @@
                             <option value="Sports Car">Sports Car</option>
                         </select>
                         <br>
-                </div> 
+                </div><br>
                     
                 <div id="features">
-                    <p>Select desired features:</p>
+                    <p class="center-text">Select desired features:</p>
                     <label for="bluetooth" id="check-label">
                         <input type="checkbox" name="bluetooth" value="bluetooth" class="checkbox-input">
-                     Bluetooth</label><br>
+                      Bluetooth</label><br>
                     <label for="third-row" id="check-label">
                         <input type="checkbox" name="third-row" value="third-row" class="checkbox-input">
                     Third Row</label><br>
@@ -125,14 +137,27 @@
                      <label for="blind-spot" id="check-label">
                         <input type="checkbox" name="blind-spot" value="blind-spot" class="checkbox-input">
                      Blind Spot Monitoring</label><br>
-                </div>
+                </div><br>
+
+		<div id="radio-group" >
+		    <p class="center-text">Engine Size Desired:</p>
+                    <label for="four">
+			<input type="radio" id="four" name="engine" value="four" class="checkbox-input">4 Cylinder
+		    </label><br>
+		    <label for="six">
+			<input type="radio" id="eight"  name="engine" value="six" class="checkbox-input">6 Cylinder
+		    </label><br>
+		    <label for="eight">
+			<input type="radio" id="eight"  name="engine" value="eight" class="checkbox-input">8 Cylinder
+		    </label><br>
+		</div>
                 
-                <div id="comment-div">
-                    <label for="comment">Comments</label>
+                <div id="comment-div" class="center-text">
+                    <label for="comment">Comments</label><br>
                         <textarea name="comment" id="comment" rows="5" cols="75">Enter your comments here </textarea>
                 </div> 
 
-                <div id="sub-button">
+                <div id="sub-button" class="center-text">
                     <label for="submit-button" id="submit-label">
                         <input type="submit" name="submit" id="submit"></label><br>
                     </label>
