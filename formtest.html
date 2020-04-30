@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Form</title>
+        <style>
+            body {
+                background-color: #CCCCCC;
+                font-family: 'courier new';
+                font-size: 20px;
+                font-style: italic;
+            }
+
+            header {
+                text-align: center;
+            }
+
+            #title {
+                width: auto;
+                padding-top: 15px;
+                font-family: monospace;
+                text-align: center;
+            }
+            
+            input {
+                margin-bottom: 35px;
+                font-family: 'courier new';
+                width: 60%;
+                text-align: left;
+                font-size: 18px;
+            }
+
+            #survey-form {
+                padding: 50px 0px 40px 0px;
+                text-align: center;
+               
+            }
+
+            #main-div {
+                background-color: whitesmoke;
+                margin: 50px 200px 100px 200px;
+                box-shadow: 10px 10px 5px #AAAAAA;
+                border-radius: 10px;
+            }
+
+            #sub-button {
+                margin-top: 30px;
+                width: 30%;
+                text-align: center;
+            }
+
+        </style>
+    </head>
+
+    <body id="main-body">
+        <header>
+            <h1 id="title">Car Finder</h1>
+            <p id="description">Enter in your information and we will find your dream car.</p>
+        </header>
+        <div id="main-div">
+            <form action="#" id="survey-form">
+                
+                <div id="name-div">
+                <label for="name" id="name-label">First Name</label><br>
+                    <input type="text" name="name" id="name" placeholder="Enter first name here" required><br>
+                </div>
+                
+                <div id="email-div">
+                    <label for="email" id="email-label">Email Address</label><br>
+                        <input type="email" name="email" id="email" placeholder="Enter email address here" required><br>
+                </div>
+                
+                <div id="number-div">
+                    <label for="number" id="number-label">Phone Number</label><br>
+                        <input type="number" name="number" id="number" placeholder="Enter Phone Number here" min="10" max="10">
+                </div>
+                
+                <div id="car-type">
+                    <label for="cartype">
+                        <select type="drop-down" name="cartype" id="cartype">Car
+                    </label><br>
+                </div> 
+                
+                <div id="comment-div">
+                    <label for="comment">Comments</label>
+                        <textarea name="comment" id="comment" rows="3" cols="50">Enter your comments here </textarea>
+                </div> 
+
+                <div id="sub-button">
+                    <label for="submit-button" id="submit-label">
+                        <input type="submit" name="submit" id="submit"></label><br>
+                    </label>
+                </div>
+                <br>
+                
+            </form>
+        </div>    
+    </body>
+
+</html>
