@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Form</title>
+        <title>Car Finder</title>
         <style>
             body {
                 background-color: #CCCCCC;
@@ -19,6 +19,10 @@
                 padding-top: 15px;
                 font-family: monospace;
                 text-align: center;
+            }
+            
+            #top-box {
+                position: sticky;   
             }
             
             input {
@@ -61,8 +65,10 @@
 
     <body id="main-body">
         <header>
-            <h1 id="title">Car Finder</h1>
-            <p id="description">Enter in your information and we will find your dream car.</p>
+            <div id="top-box">
+                <h1 id="title">Car Finder</h1>
+                <p id="description">Enter in your information and we will find your dream car.</p>
+            </div>
         </header>
         <div id="main-div">
             <form action="#" id="survey-form">
