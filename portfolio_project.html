@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML/CSS Journal and Portfolio</title>    
+        <style>
+            @media (max-width: 400px) {
+                #project-tile {
+                    width: 180px;
+                }
+            }
+
+            body {
+               background: linear-gradient(lightblue, darkblue);
+               font-family:Arial; 
+               color: #F0FFFF;
+               margin: 0px;
+            }
+            
+            #navbar {
+                display: flex;
+                width: 100%;
+                height: 50px;
+                align-content: flex-end;
+                flex-direction: row;
+                background-color: darkblue;
+                position: fixed;
+                z-index: 10;
+                top: 0px;
+                left: 0px;
+            }
+
+            #nav-link {
+                margin: 15px 20px 10px 20px;
+            }
+
+            h1 {
+                text-align: center;
+            }
+            
+            a:link, a:visited {
+                color: white;   
+                text-decoration: none;
+            }
+            
+            #intropara {
+                width: 70%;
+                box-shadow: 0 5px 5px gray;
+                border-radius: 3px;
+                margin: auto;
+                padding: 9px;
+                background-color: darkgray;
+            }
+            
+            .entrycontainer {
+                display: flex;
+                justify-content: flex-start;
+                flex-wrap: wrap;
+                text-align: center;
+            }
+            
+            .project-tile {
+                width: 300px;
+                background-color: darkgray;
+                color: lightblue;
+                border: solid 2px gray;
+                border-radius: 3px;
+                cursor: pointer;
+                margin: 15px 15px 15px 15px;
+                font-size: 1.4em;
+                padding-top: 125px;
+                padding-bottom: 125px;
+                opacity: 0.8;
+            }
+            
+            .project-tile:hover {
+                opacity: 0.5;
+            }
+
+            .footer-class {
+                width: 100%;
+                height: 100px;
+                background-color: gray;
+                color: white;
+            }
+
+            #welcome-section {
+                padding-top: 0px;
+                margin-top: 0px;
+                display: block;
+                height: 100vh;
+            }
+        </style>
+   
+    </head>
+    <body>
+        <nav id="navbar">
+            <a href="#welcome-section" id="nav-link">Welcome</a>
+            <a href="#projects" id="nav-link">Projects</a>
+            <a href="#aboutme" id="nav-link">About me</a>
+        </nav>
+        <section id="welcome-section">
+            <h1>Welcome and Introduction</h1>
+                <div id="intropara">
+                    <p>My name is Christopher George Ascherman. I plan to add new entries to this website as I learn new things. If you see new and interesting things, it may be going well. If you see nothing since like 3 years ago, I guess that answers that question. Enjoy!</p>
+                </div>
+            </section>
+        <section id="projects">
+            <h1>Projects</h1>
+            <div id="container" class="entrycontainer">   
+                <div id="maythreetwenty" class="project-tile">
+                    <a target="_blank" href="miata.html">Miata Technical Project - May 3, 2020</a>
+                </div>
+                <div id="maytwotwenty" class="project-tile">
+                    <a target="_blank" href="LIFE.html">LIFE Product Project - May 2, 2020</a>
+                </div>
+                <div id="aprilthirtytwenty" class="project-tile">
+                    <a target="_blank" href="carfinder.html">Car-Finder Form Project - April 30, 2020</a>
+                </div>
+                <div id="apriltwentysixtwenty" class="project-tile">
+                    <a target="_blank" href="Master Example Page.html">Master Example Page - April 26, 2020</a>
+                </div>
+                <div id="apriltwentyonetwenty" class="project-tile">
+                    <a target="_blank" href="Lepanto.html">Lepanto - April 21, 2020</a>
+                </div>                    
+                <div id="aprilnineteentwenty" class="project-tile">
+                    <a target="_blank" href="April 19 2020 Entry.html">April 19, 2020</a>
+                </div>
+                <div id="aprilseventeentwenty" class="project-tile">
+                    <a href="April 17 2020 Entry.html" target="_blank">April 17, 2020</a>
+                </div>
+                <div id="aprilsixteentwentytwo" class="project-tile">
+                    <a href="April 16 2020 Entry 2.html" target="_blank">April 16, 2020</a>
+                </div>
+                <div id="aprilsixteentwentyone" class="project-tile">
+                    <a href="April 16 2020 Entry 1.html" target="_blank">First Post, Attempt #1 - April 16, 2020 </a>
+                </div>
+            <div>     
+        </section>
+
+        <footer class="footer-class" id="aboutme">About me<br>
+            <a id="profile-link" href="https://github.com/cascherman/cascherman.github.io" target="_blank">Click here to visit my github profile</a>
+        </footer>
+    </body>
+</html>
