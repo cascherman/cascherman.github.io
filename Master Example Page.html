@@ -168,7 +168,7 @@
                 }
             }
             
-            #pseudo {
+            .pseudo {
                 position: float;
                 width: 50%;
                 height: 100px;
@@ -176,13 +176,15 @@
                 text-align: center;
             }
             
-            #pseudo::before {
+            .pseudo::before {
+                content: "words";
                 width: 15%;
                 height: 120px;
                 background-color: blue;
             }
             
-            #pseudo::after {
+            .pseudo::after {
+                content: "words";
                 width: 15%;
                 height: 120px;
                 background-color: purple;
@@ -353,8 +355,8 @@
                         
             <div id="psuedo-container"">
                 <h1>Pseudo - Before and After</h1>
-                <div id="pseudo">
-                    <p>COLOR CHANGE!</p>
+                <div id="pseudo" class="pseudo">
+                    <p>::Before  AND   ::After</p>
                 </div>
             </div>
 
