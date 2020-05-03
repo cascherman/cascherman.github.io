@@ -168,6 +168,26 @@
                 }
             }
             
+            #pseudo {
+                position: float;
+                width: 50%;
+                height: 100px;
+                background-color: red;
+                text-align: center;
+            }
+            
+            #pseudo::before {
+                width: 15%;
+                height: 120px;
+                background-color: blue;
+            }
+            
+            #pseudo::after {
+                width: 15%;
+                height: 120px;
+                background-color: purple;
+            }
+            
         </style>
     </head>
 
@@ -324,9 +344,16 @@
                 </div>
             </div>
                         
-            <div id="Animation">
+            <div id="animation-container">
                 <h1>Animation</h1>
                 <div id="animation">
+                    <p>COLOR CHANGE!</p>
+                </div>
+            </div>
+                        
+            <div id="psuedo-container"">
+                <h1>Pseudo - Before and After</h1>
+                <div id="pseudo">
                     <p>COLOR CHANGE!</p>
                 </div>
             </div>
