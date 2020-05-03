@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>LIFE</title>
+  <style>
+    @media (max-width: 400px) #video {
+      width: 390px;
+      height: 300px;
+    }
+    
+    body {
+      background: linear-gradient(0.25turn, #d699ff, #99ccff);
+      margin: 0px;
+      font-family: sansserif;
+    }
+
+    #header-img {
+        height: 75px;
+        width: 130px;
+    }
+
+    .nav-container {
+      display: flex;
+      position: fixed;
+      justify-content: space-evenly;
+      width: 100%;
+      height: 100px;
+      background-color: white;
+      align-items: center;
+      box-shadow: 0 10px 10px gray;
+      z-index: 2;
+    }
+    
+    .nav-box {
+      width: 300px;
+      height: 50px;
+      background-color: gray;
+      text-align: center;    
+      z-index: 3;
+      margin-right: 10px;     
+      padding-top: 32px;
+      border: solid 1px black;
+    }
+
+    .nav-box:hover {
+      opacity: 0.8;
+    }
+    
+    a, a:link {
+      text-decoration: none;
+      color: black;
+      font-size: auto;
+      margin-top: 30px;
+    }
+    
+    #description {
+      text-align: center;
+      background-color: lightgray;
+      padding: 20px 30px 20px 30px;
+    }
+
+    #about {
+      text-align: center;
+      background-color: white;
+      padding: 15px 30px 15px 30px;
+      margin: 60px 150px 30px 150px;
+      border: solid 1px black;
+    }
+
+    #intro-para {
+      line-height: 60px;
+      font-size: auto;
+    }
+
+    #form-div {
+      height: 200px;
+      margin-top: 50px;
+      font-size: 30px;
+    }
+    
+    p {
+      font-size: 18px;
+    }
+    
+    main {
+      padding-top: 100px;
+    }
+
+    #video-div, #form-div {
+      text-align: center;
+      z-index: 1;
+    }
+
+    #product-container {
+      display: grid;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: auto auto auto;
+      grid-row-gap: 20px;
+      padding: 10px;
+    }
+
+    .product-box {
+      background-color: silver;
+      border: solid;
+      border-width: 1px;
+      text-align: center;
+      margin: 10px;
+    }
+
+    .product-box:hover {
+      opacity: 0.8;
+    }
+    
+    #footer-div {
+      width: 100%;
+      height: 100px;
+      down: 0;
+      background-color: gray;
+    }
+
+    #vid-about {
+      display: flex;
+      justify-content: space-evenly;
+      margin: 20px;
+      height: 400px;
+    }
+
+    #youtube-vid {
+      margin-top: 50px;
+      margin-left: 50px;
+    }
+
+  </style>
+</head>
+  
+<body>
+  <header id="header">
+    <nav id="nav-bar" class="nav-container">
+      <div id="nav-box1" class="nav-box-pic">
+        <img src="https://images.unsplash.com/photo-1573958330021-4ebcaabc7ea2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="LIFE logo" id="header-img">
+      </div>
+      <div id="nav-box2" class="nav-box">
+        <a href="#vid-about" id="" class="nav-link">Mission and Video</a>
+      </div>
+      <div id="nav-box3" class="nav-box">
+        <a href="#product-container" id="" class="nav-link">Products</a>
+      </div>
+      <div id="nav-box4" class="nav-box">
+        <a href="#video-div" id="" class="nav-link">More Info</a>
+      </div>
+      <div id="nav-box5" class="nav-box">
+        <a href="#footer" id="" class="nav-link">About Us</a>
+      </div>
+    </nav>
+  </header> 
+      
+  <main>
+
+    <section id="vid-about">  
+      <div id="youtube-vid" class="flex-box-one">
+        <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/L4k1uExAOa4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <div id="about" class="flex-box-one">
+        <p id="intro-para">@ LIFE we offer the best products for happiness, peace, and fulfillment. The world claims this can be purchased elsewhere, but it cannot. Welcome to LIFE.</p>
+      </div>
+    </section>
+    
+    <section id="product-buttons">
+      <div id="product-container">
+        <div id="product-one" class="product-box">
+            <h2 id="product-onehead">The Beginner Package</h2>
+            <p>This a great starter option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+        <div id="product-two" class="product-box">
+            <h2 id="product-onehead">Intermediate LIFE</h2>
+            <p>This a great middle option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+        <div id="product-three" class="product-box">
+          <h2 id="product-onehead">Intermediate LIFE</h2>
+          <p>This a great middle option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+        <div id="product-four" class="product-box">
+          <h2 id="product-onehead">Intermediate LIFE</h2>
+          <p>This a great middle option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+        <div id="product-five" class="product-box">
+          <h2 id="product-onehead">Intermediate LIFE</h2>
+          <p>This a great middle option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+        <div id="product-six" class="product-box">
+          <h2 id="product-onehead">Intermediate LIFE</h2>
+          <p>This a great middle option - but it will only get you so far, plan to upgrade soon.</p>
+        </div>
+      </div>
+    </section>
+      <!-- video-->
+
+    <section>
+      <div id="video-div">
+        <video id="video" width="700" height="400" controls>
+          <source src="https://youtu.be/oJ3Ome2lCtw" type="video/mp4">
+        </video>
+      </div>
+        
+      <div id="form-div">
+        <form action="https://www.freecodecamp.com/email-submit" id="form">
+          <label for="email" id="email-label">Sign up for the LIFE club to recieve update on new products.
+            <input type="email" name="email" placeholder="email address here" id="email">
+          </label>
+          <label for="submit" id="submit-label">
+            <input type="submit" name="submit" id="submit">
+          </label>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+      <div id="footer-div">
+          <p>Thank you for visiting!</p>
+      </div>
+  </footer>
+
+</body>
+</html>
