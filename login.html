@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login Screen</title>
+    <style>
+      body {
+margin: 0px;
+background: linear-gradient(lightgray, tan);
+overflow-x: hidden;
+width: 100%;
+display: flex;
+justify-content: center;
+flex-direction: column;
+justify-content: center;
+padding-left: 40%;
+padding-top: 17%;
+padding-bottom: 17%;
+      }
+
+      .loginBox {
+        width: 20%;
+height: 250px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-shadow: 0 10px 10px gray;
+border: 1px solid gray;
+border-radius: 10px;
+background-color: white;
+
+      }
+
+      .registerBox {
+        width: 20%;
+height: 60px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+box-shadow: 0 10px 10px gray;
+border: 1px solid gray;
+border-radius: 10px;
+background-color: white;
+text-align: center;
+margin-top: 10px;
+
+      }
+
+      .loginButton:hover {
+opacity: 70%;
+      }
+
+      .loginField {
+        width: 70%;
+height: 50px;
+margin-top: 6px;
+margin-left: 39px;
+      }
+
+      .passField {
+        width: 70%;
+height: 50px;
+margin-top: 6px;
+margin-left: 39px;
+      }
+
+      .loginButton {
+        width: 71%;
+height: 50px;
+margin-top: 6px;
+margin-left: 39px;
+      }
+
+      #registerLink {
+text-decoration: none;
+color: black;
+      }
+
+      #registerLink:hover {
+opacity: 70%;
+      }
+    </style>
+
+    <script>
+      function login() {
+        if (document.getElementById("loginField").value == "chris" && document.getElementById("passField").value == "1234") {
+window.location='http://www.google.com';
+} else {
+alert("Wrong Login or Password")
+}
+      }
+
+// need to build object with other login info
+// need to make external css and js sheets and learn how to import onto HTML page.
+
+
+
+    </script>
+  </head>
+
+  <body>
+    <div id="login" class="loginBox">
+      <input type="text" class="loginField" id="loginField" placeholder="login name">
+      <input type="text" class="passField" id="passField" placeholder="password">
+      <button id="loginButton" onclick="login()" class="loginButton">Login</button>
+    </div>
+    <div id="registerBox" class="registerBox">
+      <a href="http://www.google.com" id="registerLink">New User? Click here to register.</a>
+    </div>
+  </body
+</html>
