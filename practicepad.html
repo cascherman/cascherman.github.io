@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>Practice Pad</title>
+      <style>
+		
+      </style>
+  </head>
+
+  <body>
+    <button id="addButton">Click here to add to array</button>
+    <button id="removeButton">Click here to remove from array</button>
+    <script>
+
+      document.getElementById("addButton").addEventListener("click", addToTest);
+
+      
+      var test = [];
+      function addToTest() {
+	var entry = prompt('Enter a value');
+	test.push(entry);
+	}
+
+      document.getElementById("removeButton").addEventListener("click", removeFromTest);
+
+      function removeFromTest() {
+	test.shift();
+	}
+
+    </script>
+  </body>
+</html>
