@@ -1,0 +1,173 @@
+﻿<DOCTYPE! html>
+<html>
+
+
+  <head>
+    <style>
+	body {
+	  background: linear-gradient(lightgray, white);
+	  margin: 0px;
+	  font-family: monospace;
+	  color: #6F6D6C;
+	}
+
+	h1 {
+	  text-align: center;
+	}
+
+	hr {
+	  margin-top: 55px;
+	  margin-bottom: 30px;
+	}
+
+	#displayCont {
+	  width: 100%;
+	  height: 100px;
+	  margin-top: -150px;
+	  margin-left: 0px;
+	  display: flex;
+	  align-items: center;
+	  justify-content: center;
+	  box-shadow: 0 5px 5px gray;
+	  background-color: #262626;
+	  position: fixed;
+	}
+
+
+	#displayPara {
+	  background-color: black;
+	  color: #39FF14;
+	  border: 2px dashed #39FF14;
+	  width: 80%;
+	  height 90%;
+	  border-radius: 5px;
+	  text-align: center;
+	  padding-top: 20px;
+	  padding-bottom: 20px;
+	  overflow-y: scroll;
+	  font-size: 20px;
+	}
+
+	#startHeader {
+	  margin-top: 0px;
+	}
+
+	#projectOne {
+	  margin-top: 150px;
+	}
+
+	.sectionDiv {
+	  text-align: center;
+	}
+
+	button {
+	  border: none;
+	  background-color: #262626;
+	  color: #39FF14;
+	  height: auto;
+	  width: 400px;
+	  overflow-y: overflow;
+	  font-family: monospace;	
+	  font-size: 20px;
+	  margin-left: 10px;
+	  margin-right: 10px;
+	  padding-top: 5px;
+	  padding-bottom: 5px;
+	}
+
+		
+
+    </style>
+
+    
+
+  </head>
+
+
+
+  <body>
+	<div id="displayCont">
+	  <div id="displayPara"><p></p></div>
+	</div>
+	
+	
+	<div id="projectOne" class="sectionDiv">
+	  <h1 id="startHeader">Press these buttons to change stuff</h1>
+	  <button id="btnOne" onclick="pressButAfter()">Press here to display "After"</button>
+	  <button id="btnTwo" onclick="pressButBefore()">Press here to display "Before"</button>
+	</div>
+	<hr>
+
+
+	<div id="arrayDisplay" class="sectionDiv">
+	  <h1 id="sectionHeader">Press these buttons to display an array</h1>
+	  <button id="btnThree" onclick="pressArrDisplay()">Press here to display Array info</button>
+	</div>
+	<hr>
+
+	<div id="arrayManip" class="sectionDiv">
+	  <h1 id="sectionHeader">Press these buttons to add to array, then take away</h1>
+	  <button id="btnFour" onclick="pressArrAdd()">Press here to add info to array</button>
+	  <button id="btnFive" onclick="pressArrRemoveB()">Press here to remove info from end of array</button>
+	  <button id="btnFive" onclick="pressArrRemoveE()">Press here to remove info from beginning of array</button>
+	</div>
+	<hr>
+
+
+
+
+
+
+
+
+    <script type="text/javascript">
+	alert("Welcome to Chris\' Javascript practice page - This page was created to help Chris practice Javascript in a practical way. Other than that it is not useful for you or anyone else.");
+
+	//Example ONE - press a button to change things
+
+	function pressButAfter() {
+		document.getElementById("displayPara").innerHTML = "After";
+	};
+
+	function pressButBefore() {
+		document.getElementById("displayPara").innerHTML = "Before";
+	};
+
+	//Example TWO - array display
+
+	let testArr = {
+		'family': ['chris', 'angela', 'olivia', 'paul', 'benji', 'amelia', 'sammy'],
+		'ages': [35, 36, 11, 9, 7, 4, 2],
+		'gender': ['male', 'female', 'female', 'male', 'male', 'female', 'male'],
+   		'other-info': []
+	};
+
+	function pressArrDisplay() {
+		document.getElementById("displayPara").innerHTML = testArr.family;
+	}
+
+	//Example THREE - array push, pop, shift input info
+
+	function pressArrAdd() {
+		let inputArr = prompt('Enter new value');
+		testArr['other-info'].push(' ' + inputArr);
+		document.getElementById("displayPara").innerHTML = testArr['other-info'];
+	}
+
+	function pressArrRemoveB() {
+		testArr['other-info'].pop();
+		document.getElementById("displayPara").innerHTML = testArr['other-info'];
+	}
+
+	function pressArrRemoveE() {
+		testArr['other-info'].shift();
+		document.getElementById("displayPara").innerHTML = testArr['other-info'];
+	}
+
+
+
+	  
+    </script>
+
+  </body>
+</html>
