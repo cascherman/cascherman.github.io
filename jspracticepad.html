@@ -115,13 +115,21 @@
 	  <h1 id="sectionHeader">Press these buttons to add to array, then take away</h1>
 	  <button id="btnFour" onclick="pressArrAdd()">Press here to add info to array</button>
 	  <button id="btnFive" onclick="pressArrRemoveB()">Press here to remove info from end of array</button>
-	  <button id="btnFive" onclick="pressArrRemoveE()">Press here to remove info from beginning of array</button>
+	  <button id="btnSix" onclick="pressArrRemoveE()">Press here to remove info from beginning of array</button>
 	</div>
 	<hr>
 
-
-
-
+	<div id="arrayManip" class="sectionDiv">
+	  <h1 id="sectionHeader">Find your the type of input you enter</h1>
+	  <form id="inputType">
+	    <label for="inputTextA">
+	      <input type="text" id="inputTextA" placeholder="enter text here"></input>	 
+	    </label>								      
+	    <label for="btnSeven">							      
+	      <button type="submit" id="btnSeven" onclick="inputType()">Press here to submit a value and learn it's type</button>
+	    </label>
+	  </form>
+	</div>
 
 
 
@@ -168,6 +176,11 @@
 	function pressArrRemoveE() {
 		testArr['other-info'].shift();
 		document.getElementById("displayPara").innerHTML = testArr['other-info'];
+	}
+	
+	let input = document.getElementById("inputTextA");    
+	let inputType = () => {
+		document.getElementById("displayPara").innerHTML = typeof(input);
 	}
 
 
