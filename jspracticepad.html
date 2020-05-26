@@ -80,7 +80,22 @@
 	  cursor: pointer;
 	  opacity: 0.8;
 	}
+	    
+	#navWrapper {
+	  display: flex;
+	  flex-direction: row;
+	  width: 100%;
+	  justify-content: flex-start;
+	  align-items: stretch;
+	}	
 
+	.listNav {
+	  height: 100px;
+	  weight: 100px;
+	  text-decoration: none;
+	  border: 1px solid black;
+	  text-align: center;
+	}
 		
 
     </style>
@@ -130,7 +145,18 @@
 	    </label>
 	  </form>
 	</div>
-
+	
+	<div id="navWrapper">
+	  <nav id="navBar">
+	    <div class="listNav">LOGO</div>
+	    <ul style="list-style-type: none;">
+	      <li class="listNav" id="homeLink" href="http://www.google.com">Home</li>
+	      <li class="listNav" id="productsLink" href="http://www.google.com">Products</li>
+	      <li class="listNav" id="servicesLink" href="http://www.google.com">Services</li>
+	      <li class="listNav" id="aboutLink" href="http://www.google.com">About</li>		
+	    </ul>
+	  </nav>
+	</div>
 
 
 
