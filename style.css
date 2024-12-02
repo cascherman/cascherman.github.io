@@ -1,0 +1,21 @@
+.link-box {
+    display: inline-flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.link-one-box {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+}
+
+#center-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+}
+
