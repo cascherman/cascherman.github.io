@@ -9,18 +9,35 @@
     <body>
         <div class="link-box">
             <div class="link-one-box">
-                <a href="index.html">Super Search</a>
-            </div>
-            <div class="link-one-box">
-                <a href="image.html">Image Search</a>
+                <a href="index.html">Search</a>
             </div>
         </div>
-        <div id="center-search">
-            <img src="supersearch.png" alt="Super">
-            <form action="https://www.google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Search">
-            </form>
+        <div id="center-adv">
+            <div class="adv-box">
+                <form action="https://www.google.com/search">
+                    <input class="in_box" type="text" name="as_q"><br>
+                    <input class="sub_box" type="submit" value="All Search">
+                </form>
+            </div><br>
+            <div class="adv-box">
+                <form action="https://www.google.com/search">
+                    <input class="in_box" type="text" name="as_epq"><br>
+                    <input class="sub_box" type="submit" value="Exact Search">
+                </form>
+            </div><br>
+            <div class="adv-box">
+                <form action="https://www.google.com/search">
+                    <input class="in_box" type="text" name="as_oq"><br>
+                    <input class="sub_box" type="submit" value="Any Search">
+                </form>
+            </div><br>
+            <div class="adv-box">
+                <form action="https://www.google.com/search">
+                    <input class="in_box" id="s-box" type="text" name="as_oq" placeholder="Search"><br>
+                    <input class="in_box" id="n-box"type="text" name="as_eq" placeholder="Leave out of search"><br>
+                    <input class="sub_box" type="submit" value="None Search">
+                </form>
+            </div>
         </div>
     </body>
 
